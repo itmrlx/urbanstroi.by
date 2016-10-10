@@ -297,10 +297,6 @@ body{
 
 // image black
 .image-block{
-	height: 80px;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: 50% 50%;
 	@media screen and (max-width: 991px) {
 		display: none;
 	}

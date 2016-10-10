@@ -60,7 +60,9 @@
 		<?php elseif( get_row_layout() == 'bannarmb' ): //banner margin bottom ?>
 			<!-- image block -->
 			<?php $img = get_sub_field('img'); ?>
-			<div class="wrapper image-block mb" style="background-image: url(<?php echo $img[url]; ?>);" id="<?php the_sub_field('id'); ?>"></div>
+			<div class="wrapper image-block mb">
+				<img src="<?php echo $img[url]; ?>" alt="<?php echo $img[alt]; ?>">
+			</div>
 
 		<?php elseif( get_row_layout() == 'small_cost' ): //small cost block ?>
 			<!-- small cost -->
@@ -166,7 +168,9 @@
 		<?php elseif( get_row_layout() == 'banner2' ): //banner margin top ?>
 			<!-- image block -->
 			<?php $img = get_sub_field('img'); ?>
-			<div class="wrapper image-block mt" style="background-image: url(<?php echo $img[url]; ?>);" id="<?php the_sub_field('id'); ?>"></div>
+			<div class="wrapper image-block mt">
+				<img src="<?php echo $img[url]; ?>" alt="<?php echo $img[alt]; ?>">
+			</div>
 
 		<?php elseif( get_row_layout() == 'related' ): //banner margin top ?>
 			<!-- related products -->
