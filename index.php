@@ -142,6 +142,12 @@
 									<div class="desc"><?php the_sub_field('text'); ?></div>
 									<div class="size"><?php the_sub_field('colvo'); ?></div>
 								</div>
+								<?php if(
+									get_sub_field('pr_col1') ||
+									get_sub_field('pr_col2') ||
+									get_sub_field('pr_col3') ||
+									get_sub_field('pr_col4')
+								): ?>
 								<div class="colors">
 									<span class="color1" style="background-color: <?php the_sub_field('pr_col1'); ?>;"><span class="decol"><?php the_sub_field('pr_opis1'); ?></span></span>
 									<span class="color2" style="background-color: <?php the_sub_field('pr_col2'); ?>;"><span class="decol"><?php the_sub_field('pr_opis2'); ?></span></span>
@@ -152,6 +158,7 @@
 										<?php the_sub_field('pr_add_color'); ?>
 									</div>
 								</div>
+								<?php endif; ?>
 								<div class="costs">
 									<div class="red-cost"><?php the_sub_field('red_cost'); ?></div>
 									<div class="normal-cost"><?php the_sub_field('costb'); ?></div>
@@ -240,6 +247,12 @@
 									<div class="desc"><?php the_sub_field('text'); ?></div>
 									<div class="size"><?php the_sub_field('colvo'); ?></div>
 								</div>
+								<?php if(
+									get_sub_field('pr_col1') ||
+									get_sub_field('pr_col2') ||
+									get_sub_field('pr_col3') ||
+									get_sub_field('pr_col4')
+								): ?>
 								<div class="colors">
 									<span class="color1" style="background-color: <?php the_sub_field('pr_col1'); ?>;"><span class="decol"><?php the_sub_field('pr_opis1'); ?></span></span>
 									<span class="color2" style="background-color: <?php the_sub_field('pr_col2'); ?>;"><span class="decol"><?php the_sub_field('pr_opis2'); ?></span></span>
@@ -250,6 +263,7 @@
 										<?php the_sub_field('pr_add_color'); ?>
 									</div>
 								</div>
+								<?php endif; ?>
 								<div class="costs">
 									<div class="red-cost"><?php the_sub_field('red_cost'); ?></div>
 									<div class="normal-cost"><?php the_sub_field('costb'); ?></div>
