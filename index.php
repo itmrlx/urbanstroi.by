@@ -849,6 +849,33 @@
 				</div>
 			</div>
 
+			<?php elseif( get_row_layout() == 'characteristics2' ): //characteristics 2?>
+			<div class="container characteristics-new">
+				<h2 class="title"><?php the_sub_field('titlechar2'); ?></h2>
+				<div class="row">
+					<div class="col-xs-8 left">
+						<?php $imgchar2 = get_sub_field('imgchar2'); ?>
+						<img src="<?php echo $imgchar2['sizes']['large']; ?>" alt="<?php echo $imgchar2['alt']; ?>">
+					</div>
+					<div class="col-xs-4 right">
+						<div class="title2"><?php the_sub_field('titlechar22'); ?></div>
+						<?php $charbtn16cnt1 = 0; ?>
+						<?php if( have_rows('charbtn16') ):while ( have_rows('charbtn16') ) : the_row(); ?>
+							<a href="#charnew<?=$charbtn16cnt1++;?>" class="btn btn-primary fancybox"><?php the_sub_field('charbtn16_btn'); ?></a>
+							<div class="clearfix"></div>
+						<?php endwhile;endif; ?>
+					</div>
+					<?php $charbtn16cnt2 = 0; ?>
+					<?php if( have_rows('charbtn16') ):while ( have_rows('charbtn16') ) : the_row(); ?>
+						<div id="charnew<?=$charbtn16cnt2++;?>" style="display: none;">
+							<div class="charnew-content">
+								<?php the_sub_field('charbtn16_text'); ?>
+							</div>
+						</div>
+					<?php endwhile;endif; ?>
+				</div>
+			</div>
+
 	<?php endif; ?>
 <?php endwhile; endif; ?>
 

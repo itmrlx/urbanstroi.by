@@ -2072,3 +2072,61 @@ body{
 		}
 	}
 }
+
+// characteristics-new
+.characteristics-new{
+	margin-top: 50px;
+	margin-bottom: 50px;
+	.title{
+		color: #191919;
+		font-size: 35px;
+		font-weight: 700;
+		text-align: left;
+		margin-bottom: 30px;
+		text-transform: uppercase;
+		@media screen and (max-width: 767px) {
+			font-size: 25px;
+			margin-bottom: 30px;
+		}
+	}
+	.title2{
+		font-weight: bold;
+		margin-bottom: 15px;
+		font-size: 19px;
+	}
+	@media (max-width: 767px) {
+		.left,
+		.right{
+			width: 100%;
+		}
+		.left{
+			margin-bottom: 30px;
+		}
+		.title2{
+			text-align: center;
+		}
+	}
+	.right{
+		text-align: right;
+		.btn{
+			margin-bottom: 10px;
+			display: inline-block;
+			background: #000;
+			border-color: #000;
+			transition: all .3s;
+			white-space: normal;
+			text-align: right;
+			@media (max-width: 767px) {
+				display: block;
+				width: 100%;
+				text-align: center;
+			}
+			&:hover{
+				background: lighten(#000,15%);
+			}
+		}
+	}
+}
+.charnew-content{
+	max-width: 600px;
+}
