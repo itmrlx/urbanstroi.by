@@ -763,7 +763,7 @@
 				<a href="#fform" class="btn btn-danger fancybox" onclick="fform('<?php the_sub_field('sib_title'); ?>','<?php the_sub_field('sib_title'); ?>');">Заказать</a>
 			</div>
 		</div>
-		
+
 		<?php elseif( get_row_layout() == 'circle_block' ): //circle block ?>
 			<div class="container circle-block" id="<?php the_sub_field('id'); ?>">
 				<div class="row">
@@ -853,7 +853,7 @@
 								</div>
 							</div>
 							<div class="clearfix"></div>
-							<a href="#fform" class="btn btn-danger" onclick="fform('<?php the_sub_field('sib2_title'); ?>','<?php the_sub_field('sib2_title'); ?>');">Заказать</a>
+							<a href="#fform" class="btn btn-danger fancybox" onclick="fform('<?php the_sub_field('sib2_title'); ?>','<?php the_sub_field('sib2_title'); ?>');">Заказать</a>
 						</div>
 					</div>
 					<div class="col-xs-5">
