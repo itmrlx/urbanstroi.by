@@ -141,10 +141,11 @@ $(document).ready(function(){
 // modal window when close page
 function dontExitModal() {
 		if($(window).width() >= 767){
-			$(window).mousemove(function(e) {
+			$(window).on('mousemove', function(e) {
 				if(!$.fancybox.isOpen) {
 					if(e.clientY <= 15){
 						$.fancybox.open({href : '#dont-exit', padding : 0});
+						$(window).off('mousemove');
 					}
 				}
 			});
