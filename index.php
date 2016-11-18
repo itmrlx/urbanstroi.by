@@ -26,29 +26,8 @@
 										<div class="description"><?php the_sub_field('slogan'); ?></div>
 									</div>
 									<div class="col-xs-5 right-container">
-										<form id="mainblockform" class="form-class">
-											<div class="form-title"><?php the_sub_field('title_form'); ?></div>
-											<div class="form-group">
-												<input class="form-control" name="mail" type="email" placeholder="E-mail*:" required />
-												<input class="form-control" name="site" type="hidden" value="<?php echo $_SERVER['HTTP_HOST']; ?>" />
-											</div>
-											<div class="form-group" style="display:none;">
-												<label>for robots:</label>
-												<input class="form-control" type="text" name="email" />
-												<input class="form-control" type="text" name="title" value="<?php the_sub_field('title_form'); ?>" />
-											</div>
-											<button type="submit" class="btn btn-green big full-width" onclick="fform('<?php the_sub_field('title_form'); ?>');">Отправить</button>
-											<div class="form-group">
-												<label class="checkbox">
-													<input type='checkbox' checked name="subscribe" value="subscribe" >
-													<span></span>
-													Подписаться на рассылку
-												</label>
-											</div>
-											<div class="form-group">
-												<a href="http://urbanstroi.by/pk/" target="_blank" class="pk-head">Политика конфеденциальности</a>
-											</div>
-										</form>
+										<div class="form-title"><?php the_sub_field('title_form'); ?></div>
+										<a href="http://urbanstroi.by/marketing-kit.pdf" class="btn btn-green big full-width" target="_blank">Получить</a>
 									</div>
 								</div>
 							</div>
