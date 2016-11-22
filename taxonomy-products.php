@@ -37,8 +37,12 @@
 
 	<div class="container product-cat-description">
 		<div class="wrap">
+			<?php 
+$queried_object = get_queried_object();
+$term_id = $queried_object->term_id;
+			 ?>
 			<h1 class="title"><?php single_term_title(); ?></h1>
-			<div class="desc"><?= term_description(); ?></div>
+			<div class="desc"><?php the_field('cat_text', 'products_'.$term_id); ?></div>
 		</div>
 	</div>
 
